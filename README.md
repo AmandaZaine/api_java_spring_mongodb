@@ -1,27 +1,23 @@
-# API_Java_SpringBoot_MongoDB
+<!-- Based on [Course Developing APIs with Java, Spring Boot and MongoDB](https://youtube.com/playlist?list=PL5X822QTM1JYvV-osYuBH9FBq5rOO81Ea&feature=shared) -->
 
-POC baseada no [Curso Desenvolvendo APIs com Java, Spring Boot e MongoDB](https://youtube.com/playlist?list=PL5X822QTM1JYvV-osYuBH9FBq5rOO81Ea&feature=shared)
+### Objective
+* Creation of a simple REST API / CRUD for Student entity manipulation.
 
-### Objetivo
-* Criação de uma API REST / CRUD simples para manipulação da entidade Aluno.
-
-### Tecnologias usadas
+### Technologies used
 * Java 21
 * SpringBoot 
 * MongoDB 
-* Spring Cloud OpenFeign usado [para consumir uma API de busca de CEPs](https://brasilapi.com.br/)
+* Spring Cloud OpenFeign used [to consume a CEP search API](https://brasilapi.com.br/)
 * JSON
   
-### Padrões implementados
-* [DTO (Data Transfer Object)](https://fullcycle.com.br/o-que-e-dto/): Usado para transferir dados entre camadas ou serviços.
+### Implemented patterns
+* DTO (Data Transfer Object): Used to transfer data between layers or services.
 
-### Arquitetura usada
-* [REST](https://www.redhat.com/pt-br/topics/api/what-is-a-rest-api) (GET, POST, PUT, DELETE, PATCH)
-*  Arquitetura em camadas MVC (Model-View-Controller)
-    * Controller:  Camada de interface com o usuário. Onde recebemos as solicitações.
-    * Service: Camada de negócios ou aplicação. Contém a lógica de negócio e gerencia as operações entre os repositórios e os controladores.
-    * Repository: Camada de persistência de dados. Contém métodos que interagem diretamente com o banco de dados.
-    * Model: Camada de domínio ou as entidades (representações de dados mapeadas para o banco de dados).
-    * DTO: Serve como intermediário para transferir dados de forma eficiente.
-
-<!-- Endpoints criados: -->
+### Architecture used
+*  REST (GET, POST, PUT, DELETE, PATCH)
+*  MVC layered architecture (Model-View-Controller)
+    * Controller: User interface layer. Where we receive requests.
+    * Service: Business or application layer. Contains business logic and manages operations between repositories and controllers.
+    * Repository: Data persistence layer. Contains methods that interact directly with the database.
+    * Model: Domain layer or entities (data representations mapped to the database).
+    * DTO: Serves as an intermediary to transfer data efficiently.
